@@ -74,7 +74,11 @@ export default function ContactBlock({
 										<p className="text-green-600">{typingIndicator}</p>
 									) : latestMessageData &&
 									  latestMessageData.chat_id === contact._id ? (
-										<i>{latestMessageData.recent}</i>
+										<i>
+											{latestMessageData.recent.length >= 35
+												? latestMessageData.recent.substring(0, 35) + "..."
+												: latestMessageData.recent}
+										</i>
 									) : contact.latestMessage ? (
 										contact.latestMessage.length >= 35 ? (
 											<i>{contact.latestMessage.substring(0, 35) + "..."}</i>
