@@ -23,3 +23,5 @@
 11. The latest messages functionality is buggy. It somewhat works.
 
 12. **REMOVE THE CHANGE PASSWORD FEATURE** - If you ever implement it, don't forget you'll have to invalidate the old JWT and create a new JWT for that new password
+
+13. Make the search bar work
